@@ -27,8 +27,9 @@
 		}
 		public static void damage() {
 			Scanner userInput = new Scanner(System.in);
+											//Change this//
 			System.out.println("Zebstrika used Thunderbolt!");
-			System.out.println("Trainer, what are your Arcanine's states?");
+			System.out.println("Trainer, what are your ___'s states?");
 			System.out.println("Level: ");
 			int level = userInput.nextInt();
 			System.out.println("Attack: ");
@@ -42,7 +43,12 @@
 			System.out.println("HP: ");
 			int hp = userInput.nextInt();
 			double modifier = (0.85 + (Math.random() * 0.15) * stab);
-			double damage = (double)(((2 * level +10)/250) + (attack/defense) * base + 2) * modifier;
+			double damagestat = (int)((((2 * level +10)/250) + (attack/defense) * base + 2) * modifier);
+			System.out.println(" _____ sustained " + damagestat + " points damage.");
+			double newhp= hp - damagestat;
+			System.out.println("this is your new hp " + newhp);
+			
+			
 		}
 	}
 
