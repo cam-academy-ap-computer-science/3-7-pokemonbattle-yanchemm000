@@ -12,8 +12,10 @@ public class PokemonBattle {
 	public static void main(String[] args) {
 		String name;
 		name =battleStart();
-		damage(name);
-		/* statsTable(); */
+		int attack;
+		attack  =damage(name);
+		int level = 0;
+		statstable(attack, level); 
 	}
 	
 	public static String battleStart() {
@@ -49,7 +51,13 @@ public class PokemonBattle {
 		System.out.println(name+" sustained " + damagestat + " points damage.");
 		int newhp = hp - damagestat;
 		System.out.println("HP, after damage, is now " + newhp);
-		
+		return attack;
 
 	}
+	public static int statstable(int attack,  int level) {
+		System.out.println(attack);
+		System.out.println(level);
+		
+	}
+	
 }
