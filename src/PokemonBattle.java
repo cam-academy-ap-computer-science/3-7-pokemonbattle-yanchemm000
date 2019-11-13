@@ -1,3 +1,8 @@
+/* Grading
+Sarah Gilliam
+Good job!
+25/25
+*/
 /*This is my pseudocode. I think I'm gonna input the scanner. Then I'm 
 going to make methods for battlestart, damage, and stats.
 for random number use Math.random() but do it like 
